@@ -28,7 +28,13 @@ kotlin {
     }
     
     sourceSets {
-        val commonMain by getting
+        val coroutinesVersion = "1.5.1"
+
+        val commonMain by getting {
+            dependencies {
+                api("org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutinesVersion}")
+            }
+        }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test-common"))
@@ -36,7 +42,11 @@ kotlin {
             }
         }
 
-        val androidMain by getting
+        val androidMain by getting {
+            dependencies {
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:${coroutinesVersion}")
+            }
+        }
         val androidTest by getting {
             dependencies {
                 implementation(kotlin("test-junit"))
@@ -44,7 +54,15 @@ kotlin {
             }
         }
 
-        val iosMain by getting
+        val iosMain by getting {
+            dependencies {
+                implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutinesVersion}-native-mt"){
+                    version {
+                        strictly("${coroutinesVersion}-native-mt")
+                    }
+                }
+            }
+        }
         val iosTest by getting
     }
 }
