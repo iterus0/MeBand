@@ -29,10 +29,12 @@ kotlin {
     
     sourceSets {
         val coroutinesVersion = "1.5.1"
+        val kableVersion = "0.7.1"
 
         val commonMain by getting {
             dependencies {
                 api("org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutinesVersion}")
+                implementation("com.juul.kable:core:${kableVersion}")
             }
         }
         val commonTest by getting {
