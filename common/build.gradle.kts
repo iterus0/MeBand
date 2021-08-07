@@ -4,6 +4,7 @@ plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
+    kotlin("plugin.serialization") version "1.5.21"
 }
 
 version = "0.1.0"
@@ -30,11 +31,13 @@ kotlin {
     sourceSets {
         val coroutinesVersion = "1.5.1"
         val kableVersion = "0.7.1"
+        val ktorIoVersion = "1.6.2"
 
         val commonMain by getting {
             dependencies {
                 api("org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutinesVersion}")
-                implementation("com.juul.kable:core:${kableVersion}")
+                api("com.juul.kable:core:${kableVersion}")
+                implementation("io.ktor:ktor-io:${ktorIoVersion}")
             }
         }
         val commonTest by getting {
