@@ -24,10 +24,12 @@ kotlin {
         summary = "Some description for the Common Module"
         homepage = "Link to the Common Module homepage"
         ios.deploymentTarget = "14.1"
-        frameworkName = "common"
+        framework {
+            baseName = "common"
+        }
         podfile = project.file("../iosApp/Podfile")
     }
-    
+
     sourceSets {
         val coroutinesVersion = "1.5.1"
         val kableVersion = "0.8.0"
