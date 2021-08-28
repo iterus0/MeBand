@@ -2,7 +2,6 @@ package xyz.iterus.meband.android
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import xyz.iterus.meband.Greeting
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
@@ -13,9 +12,5 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
         val tv: TextView = findViewById(R.id.text_view)
         tv.text = greet()
-    }
-
-    private fun greet(): String {
-        return Greeting().greeting()
     }
 }
