@@ -32,7 +32,7 @@ kotlin {
 
     sourceSets {
         val coroutinesVersion = "1.5.1"
-        val kableVersion = "0.8.0"
+        val kableVersion = "0.9.1"
         val ktorIoVersion = "1.6.3"
 
         val commonMain by getting {
