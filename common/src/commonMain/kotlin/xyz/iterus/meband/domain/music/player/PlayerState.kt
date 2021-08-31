@@ -1,4 +1,4 @@
-package xyz.iterus.meband.music
+package xyz.iterus.meband.domain.music.player
 
 sealed class PlayerState {
     object Playing : PlayerState()

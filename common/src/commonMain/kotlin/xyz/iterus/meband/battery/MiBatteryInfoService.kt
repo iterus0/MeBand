@@ -7,6 +7,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import xyz.iterus.meband.bluetooth.MiBandConst.BASE_MI_UUID
 import xyz.iterus.meband.bluetooth.MiBandConst.SERVICE_MI_BAND
+import xyz.iterus.meband.domain.battery.BatteryInfoService
 
 class MiBatteryInfoService(
     private val peripheral: Peripheral

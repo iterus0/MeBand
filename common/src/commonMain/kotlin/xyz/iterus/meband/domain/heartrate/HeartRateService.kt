@@ -1,4 +1,4 @@
-package xyz.iterus.meband.heartrate
+package xyz.iterus.meband.domain.heartrate
 
 import kotlinx.coroutines.flow.Flow
 

@@ -9,6 +9,7 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
 import xyz.iterus.meband.bluetooth.BleConst.BASE_UUID
+import xyz.iterus.meband.domain.heartrate.HeartRateService
 
 class GenericBleHeartRateService(
     private val peripheral: Peripheral

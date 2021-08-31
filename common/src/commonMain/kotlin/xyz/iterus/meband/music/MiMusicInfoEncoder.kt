@@ -1,6 +1,8 @@
 package xyz.iterus.meband.music
 
 import io.ktor.utils.io.core.*
+import xyz.iterus.meband.domain.music.MusicInfo
+import xyz.iterus.meband.domain.music.player.PlayerState
 import kotlin.experimental.or
 
 internal class MiMusicInfoEncoder {

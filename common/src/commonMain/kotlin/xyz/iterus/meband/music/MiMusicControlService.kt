@@ -8,6 +8,11 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 import xyz.iterus.meband.bluetooth.MiBandConst
 import xyz.iterus.meband.bluetooth.MiBandConst.SERVICE_MI_BAND
+import xyz.iterus.meband.domain.music.MusicControlService
+import xyz.iterus.meband.domain.music.MusicInfo
+import xyz.iterus.meband.domain.music.player.PlayerState
+import xyz.iterus.meband.domain.music.player.PlayerStatus
+import xyz.iterus.meband.domain.music.song.SongInfo
 import xyz.iterus.meband.event.MiDeviceEventService
 import xyz.iterus.meband.extension.toHexString
 import xyz.iterus.meband.mtu.MTUEncoder

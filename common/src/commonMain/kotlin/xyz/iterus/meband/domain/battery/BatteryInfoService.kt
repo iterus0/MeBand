@@ -1,4 +1,4 @@
-package xyz.iterus.meband.battery
+package xyz.iterus.meband.domain.battery
 
 interface BatteryInfoService {
 

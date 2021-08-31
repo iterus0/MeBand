@@ -1,6 +1,7 @@
-package xyz.iterus.meband.music
+package xyz.iterus.meband.domain.music
 
 import kotlinx.coroutines.flow.Flow
+import xyz.iterus.meband.music.MusicControlEvent
 
 interface MusicControlService {
 
