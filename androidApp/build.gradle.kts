@@ -27,10 +27,6 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
-
-    sourceSets.all {
-        java.srcDir("src/$name/kotlin")
-    }
 }
 
 dependencies {
