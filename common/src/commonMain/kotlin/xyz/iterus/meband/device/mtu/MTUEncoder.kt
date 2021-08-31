@@ -1,4 +1,4 @@
-package xyz.iterus.meband.mtu
+package xyz.iterus.meband.device.mtu
 
 import io.ktor.utils.io.core.*
 import kotlin.experimental.or

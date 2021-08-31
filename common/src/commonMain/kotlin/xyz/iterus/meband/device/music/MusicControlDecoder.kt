@@ -1,4 +1,4 @@
-package xyz.iterus.meband.music
+package xyz.iterus.meband.device.music
 
 import io.ktor.utils.io.core.*
 

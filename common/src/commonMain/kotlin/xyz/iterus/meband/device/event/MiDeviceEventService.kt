@@ -1,4 +1,4 @@
-package xyz.iterus.meband.event
+package xyz.iterus.meband.device.event
 
 import com.juul.kable.Peripheral
 import com.juul.kable.characteristicOf

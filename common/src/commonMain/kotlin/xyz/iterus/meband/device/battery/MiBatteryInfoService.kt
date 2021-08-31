@@ -1,4 +1,4 @@
-package xyz.iterus.meband.battery
+package xyz.iterus.meband.device.battery
 
 import com.juul.kable.Peripheral
 import com.juul.kable.characteristicOf

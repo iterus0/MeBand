@@ -1,4 +1,4 @@
-package xyz.iterus.meband.music
+package xyz.iterus.meband.device.music
 
 import com.juul.kable.Peripheral
 import com.juul.kable.characteristicOf
@@ -13,9 +13,9 @@ import xyz.iterus.meband.domain.music.MusicInfo
 import xyz.iterus.meband.domain.music.player.PlayerState
 import xyz.iterus.meband.domain.music.player.PlayerStatus
 import xyz.iterus.meband.domain.music.song.SongInfo
-import xyz.iterus.meband.event.MiDeviceEventService
+import xyz.iterus.meband.device.event.MiDeviceEventService
 import xyz.iterus.meband.extension.toHexString
-import xyz.iterus.meband.mtu.MTUEncoder
+import xyz.iterus.meband.device.mtu.MTUEncoder
 
 class MiMusicControlService(
     private val peripheral: Peripheral,

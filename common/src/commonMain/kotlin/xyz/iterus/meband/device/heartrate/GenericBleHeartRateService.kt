@@ -1,4 +1,4 @@
-package xyz.iterus.meband.heartrate
+package xyz.iterus.meband.device.heartrate
 
 import com.juul.kable.Peripheral
 import com.juul.kable.characteristicOf

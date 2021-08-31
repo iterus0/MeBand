@@ -11,12 +11,11 @@ import com.juul.kable.peripheral
 import kotlinx.coroutines.async
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
-import xyz.iterus.meband.MiBand
-import xyz.iterus.meband.battery.MiBatteryInfoService
-import xyz.iterus.meband.event.MiDeviceEventService
-import xyz.iterus.meband.heartrate.GenericBleHeartRateService
-import xyz.iterus.meband.music.MiMusicControlService
-import java.util.*
+import xyz.iterus.meband.device.MiBand
+import xyz.iterus.meband.device.battery.MiBatteryInfoService
+import xyz.iterus.meband.device.event.MiDeviceEventService
+import xyz.iterus.meband.device.heartrate.GenericBleHeartRateService
+import xyz.iterus.meband.device.music.MiMusicControlService
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
